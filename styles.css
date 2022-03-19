@@ -1,3 +1,5 @@
+/*INDEX PAGE*/
+
 /* Top banner with links */
 
 body {
@@ -19,7 +21,6 @@ a {
     margin-top: -10px;
     font-size: larger;
     padding: 20px;
-
 }
 
 #storeLink {
@@ -29,6 +30,7 @@ a {
 #abuelasEmbroideryLink {
     margin-right: 20px;
 }
+
 
 
 /* First section below banner */
@@ -57,10 +59,26 @@ a {
     font-size: 65px;
     font-family: cursive;
     margin-bottom: 0px;
+    margin-top: -50px;
+    margin-left: -5px;
+}
+
+#subWelcomeHeader {
+    margin: 0px;
+    margin-top: -15px;
+    margin-left: 15px;
+    font-family: cursive;
+    font-weight: lighter;
 }
 
 #welcomeText {
     font-size: large;
+}
+
+#visitStoreButton {
+    width: 200px;
+    background-color: orange;
+    border-radius: 50px;
 }
 
 #slideshowImage {
@@ -96,13 +114,20 @@ a {
 }
 
 .circleImage {
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
     border-radius: 500px;
 }
 
 .itemSubtext {
     font-style: italic;
     font-size: 20px;
-    font-weight: lighter;
+}
+
+
+/* CONTACT PAGE */
+
+/*Header*/
+#contactHeader {
+    text-align: center;
 }
