@@ -8,57 +8,53 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script> 
 </head>
-<body>
-    <div class="topMenu">
-        <div class="topMenuLeft">
-            <a href="index.html" id="abuelasEmbroideryLink">Abuela's Embroidery</a>
-            <a href="contactPage.html" id="contactLink">Contact</a>
-        </div>
-        <div class="topMenuRight">
-            <a href="storePage.html" id="storeLink">Store</a>
-            <a href="myCartPage.html" id="myCartLink">My Cart</a>
-        </div>
+<body id="homepageBody">
+
+    <div id="topMenu">
+            <a href="index.html" class="menuLink" id="homeLink">Home</a>
+            <a href="contactPage.html" class="menuLink" id="contactLink">Contact</a>
+            <a href="storePage.html" class="menuLink" id="storeLink">Store</a>
+            <a href="myCartPage.html" class="menuLink" id="myCartLink">My Cart</a>
     </div>
-    <div class="firstSection">
-        <div class="firstSectionLeft">
+
+    <div id="firstSection">
             <h1 id="welcomeHeader">Welcome to Abuela's Embroidery!</h1>
-            <h2 id="subWelcomeHeader">Quality Handmade Goods</h2>
+            <h2 id="subWelcomeHeader">...Quality Handmade Goods...</h2>
             <p id="welcomeText">I specialize in embroidery and monogramming! With the links at the top of the page you
                 can contact me via the messaging center, visit the store, or view the items in your cart. To return to this page,
-                click on the "Abuela's Embroidery" link on the top-left! </p>
+                click on the "Home" link on the top-left! </p>
             <button type="button" id="visitStoreButton">Visit The Store!</button>
-        </div>
-        <div class="firstSectionRight">
             <img id = "slideshowImage" src="images/whitePurse.jpg" alt="A handmade white purse.">
-        </div>
     </div>
+
     <div class="secondSection">
         <h2 id="secondSectionHeader">Many handmade items available today!</h2>
         <div id="itemsContainer">
             <div class="itemContainer">
-                <div class="itemCircle"></div>
+                <div class="itemCircle">
                     <img class = "circleImage" src="images/purplePurse.jpg" alt="a purple purse">
-                <p class="itemSubtext">Handmade purses,</p>
+                    <p class="itemSubtext">Purses</p>
+                </div>
             </div>
             <div class="itemContainer">
-                <div class="itemCircle"></div>
+                <div class="itemCircle">
                     <img class = "circleImage" src="images/hippieDolls.jpg" alt="a couple of dolls">
-                <p class="itemSubtext">dolls,</p>
+                    <p class="itemSubtext">Dolls</p>
+                </div>
             </div>
             <div class="itemContainer">
-                <div class="itemCircle"></div>
+                <div class="itemCircle">
                     <img class = "circleImage" src="images/monogramming.jpg" alt="a monogrammed bag">
-                <p class="itemSubtext">monogramming,</p>
+                    <p class="itemSubtext">Monogramming</p>
+                </div>
             </div>
             <div class="itemContainer">
                 <div class="itemCircle">
                     <img class = "circleImage" src="images/bowl.jpg" alt="an embroidered bowl">
+                    <p class="itemSubtext">...and more!</p>
                 </div>
-                <p class="itemSubtext">and much, much, more!</p>
             </div>
         </div>
-
-
     </div>
 </body>
 </html>

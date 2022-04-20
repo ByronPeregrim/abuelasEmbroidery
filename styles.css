@@ -4,124 +4,107 @@
 
 body {
     background-color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-a {
-    color: rgb(90, 90, 90);
-    text-decoration: none;
-}
-
-.topMenu {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: solid;
-    border-bottom-width: 3px;
-    border-color: wheat;
-    margin-top: -10px;
-    font-size: larger;
-    padding: 20px;
-}
-
-#storeLink {
-    margin-right: 20px;
-}
-
-#abuelasEmbroideryLink {
-    margin-right: 20px;
-}
-
-
-
-/* First section below banner */
-
-.firstSection {
-    display: flex;
-    margin-top: 50px;
-    height: 500px;
-}
-
-.firstSectionLeft {
+    font-family: serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex: 1;
-    padding-left: 50px;
+    padding: 10px;
 }
 
-.firstSectionRight {
+#topMenu {
     display: flex;
-    flex: 1;
-    justify-content: center;
+    border-bottom: solid;
+    border-bottom-color: wheat;
+    justify-content: space-between;
+    font-size: 4vw;
+    padding: 2%;
+    margin-top: -5px;
+}
+
+.menuLink {
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+}
+/* First section below banner */
+
+#firstSection {
+    display: flex;
+    flex-direction: column;
 }
 
 #welcomeHeader {
-    font-size: 65px;
-    font-family: cursive;
-    margin-bottom: 0px;
-    margin-top: -50px;
-    margin-left: -5px;
+    font-size: 6vw;
+    font-family: serif;
+    font-weight: lighter;
+    color: goldenrod;
+    text-align: center;
 }
 
 #subWelcomeHeader {
     margin: 0px;
-    margin-top: -15px;
-    margin-left: 15px;
-    font-family: cursive;
+    font-size: 3vw;
+    font-style: italic;
     font-weight: lighter;
+    margin-top: -15px;
+    text-align: center;
 }
 
 #welcomeText {
-    font-size: large;
+    font-size: 3vw;
 }
 
 #visitStoreButton {
-    width: 200px;
+    font-size: 3vw;
     background-color: orange;
     border-radius: 50px;
+    align-self: flex-end;
+    width: 30vw;
+    
 }
 
 #slideshowImage {
-    width: auto;
     border-radius: 500px;
 }
 
 /* Second section */
 
 .secondSection {
-    background-color: wheat;
+    background-color: rgba(245, 222, 179, 0.25);
     display: flex;
     flex-direction: column;
 }
 
 #secondSectionHeader {
     text-align: center;
-    font-family: cursive;
-    font-size: 30px;
+    font-size: 4vw;
+    font-weight: lighter;
 }
 
 #itemsContainer {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    gap: 75px;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 4vw;
 }
 
 .itemContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    margin: 5%;
 }
 
 .circleImage {
-    width: 175px;
-    height: 175px;
+    width: 30vw;
+    height: 30vw;
     border-radius: 500px;
+    
 }
 
 .itemSubtext {
-    font-style: italic;
-    font-size: 20px;
+    margin-top: 0;
+    text-align: center;
 }
 
 
@@ -130,4 +113,30 @@ a {
 /*Header*/
 #contactHeader {
     text-align: center;
+}
+
+#contactSubHeader {
+    text-align: center;
+}
+
+#contactForm {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+#contactList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#messageSubmitButton {
+    /* This extra margin represent roughly the same space as the space
+        between the labels and their text fields */
+    margin-left: .5em;
 }
