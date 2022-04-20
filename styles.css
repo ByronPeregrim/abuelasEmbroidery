@@ -7,6 +7,7 @@ body {
     font-family: serif;
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 #topMenu {
@@ -25,9 +26,10 @@ body {
 }
 /* First section below banner */
 
-#firstSection {
-    display: flex;
-    flex-direction: column;
+
+#welcomeHeaders {
+    background-color: rgba(245, 222, 179, 0.25);
+    z-index: 1;
 }
 
 #welcomeHeader {
@@ -35,6 +37,7 @@ body {
     font-weight: lighter;
     color: goldenrod;
     text-align: center;
+    margin-top: 1vw;
 }
 
 #subWelcomeHeader {
@@ -45,32 +48,45 @@ body {
     text-align: center;
 }
 
-#welcomeText {
+#messageAndButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+ }
+
+#welcomeMessage {
     font-size: 3vw;
+    text-align: center;
+    margin-top: 4vw;
+    z-index: 1;
 }
 
 #visitStoreButton {
     font-size: 3vw;
     background-color: orange;
     border-radius: 50px;
-    align-self: flex-end;
     width: 30vw;
+    z-index: 1;
 }
 
 #slideshowImage {
     align-self: center;
     border-radius: 500px;
     width: 100%;
+    z-index: 0;
+    margin-top: -10vw;
+    margin-left: 3vw;
 }
-/* Second section */
+/* Item display bar section */
 
-#secondSection {
+#itemDisplayBarSection {
     background-color: rgba(245, 222, 179, 0.25);
     display: flex;
     flex-direction: column;
 }
 
-#secondSectionHeader {
+#itemDisplayBarSectionHeader {
     text-align: center;
     font-size: 5vw;
     font-weight: lighter;
@@ -129,8 +145,17 @@ body {
         font-size: 2vw;
     }
 
-    #welcomeText {
+    #welcomeMessageAndPhoto {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: -3vw;
+    }
+
+    #welcomeMessage {
         font-size: 2vw;
+        margin-top: 0;
+        z-index: 1;
     }
     
     #visitStoreButton {
@@ -138,16 +163,19 @@ body {
         width: 20vw;
     }
 
-    #homepageFirstSectionBox {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-top: -3vw;
-    }
-
     #slideshowImage {
         width: 200%;
         margin-left: 50px;
+        margin-top: -2vw;
+    }
+
+    #itemDisplayBarSection {
+        height: 18vw;
+    margin-top: 5vw;
+    }
+
+    #itemDisplayBarSectionHeader {
+        font-size: 3vw;
     }
 
     #itemsContainer {
@@ -166,15 +194,7 @@ body {
     .itemSubtext {
         font-size: 2vw;
     }
-
-    #secondSection {
-        height: 18vw;
-    margin-top: 5vw;
-    }
-
-    #secondSectionHeader {
-        font-size: 3vw;
-    }
+    
 }
 
 

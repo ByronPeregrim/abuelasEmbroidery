@@ -8,57 +8,51 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script> 
 </head>
-<body id="homepageBody">
+<body>
 
     <div id="topMenu">
             <a href="index.html" class="menuLink" id="homeLink">Home</a>
-            <a href="contactPage.html" class="menuLink" id="contactLink">Contact</a>
             <a href="storePage.html" class="menuLink" id="storeLink">Store</a>
+            <a href="contactPage.html" class="menuLink" id="contactLink">Contact</a>
             <a href="myCartPage.html" class="menuLink" id="myCartLink">My Cart</a>
     </div>
 
-    <div id="firstSection">
-            <h1 id="welcomeHeader">Welcome to Abuela's Embroidery!</h1>
-            <h2 id="subWelcomeHeader">...Quality Handmade Goods...</h2>
-            <div id="homepageFirstSectionBox">
-                <div>
-                    <p id="welcomeText">I specialize in embroidery and monogramming! With the links at the top of the page you
-                    can contact me via the messaging center, visit the store, or view the items in your cart. To return to this page,
-                    click on the "Home" link on the top-left! </p>
-                    <button type="button" id="visitStoreButton">Visit The Store!</button>
-                </div>
-                <img id = "slideshowImage" src="images/whitePurse.jpg" alt="A handmade white purse.">
-            </div>
+    <div id="welcomeHeaders">
+        <h1 id="welcomeHeader">Welcome to Abuela's Embroidery!</h1>
+        <h2 id="subWelcomeHeader">...Quality Handmade Goods...</h2>
     </div>
-
-    <div id="secondSection">
-        <h2 id="secondSectionHeader">Many handmade items available today!</h2>
+            
+    <div id="welcomeMessageAndPhoto">
+        <div id="messageAndButton">
+            <p id="welcomeMessage">I specialize in embroidery and monogramming! With the links at the top of the page you
+                can visit the store, contact me via the messaging center, or view the items in your cart. To return to this page,
+                 click on the "Home" link on the top-left! </p>
+            <button type="button" id="visitStoreButton">Visit The Store!</button>
+        </div>
+        <img id = "slideshowImage" src="images/whitePurse.jpg" alt="A handmade white purse.">
+    </div>
+    
+    <div id="itemDisplayBarSection">
+        <h2 id="itemDisplayBarSectionHeader">Many handmade items available today!</h2>
         <div id="itemsContainer">
             <div class="itemContainer">
-                <div class="itemCircle">
                     <img class = "circleImage" src="images/purplePurse.jpg" alt="a purple purse">
                     <p class="itemSubtext">Purses</p>
-                </div>
             </div>
             <div class="itemContainer">
-                <div class="itemCircle">
                     <img class = "circleImage" src="images/hippieDolls.jpg" alt="a couple of dolls">
                     <p class="itemSubtext">Dolls</p>
-                </div>
             </div>
             <div class="itemContainer">
-                <div class="itemCircle">
                     <img class = "circleImage" src="images/monogramming.jpg" alt="a monogrammed bag">
                     <p class="itemSubtext">Monogramming</p>
-                </div>
             </div>
             <div class="itemContainer">
-                <div class="itemCircle">
                     <img class = "circleImage" src="images/bowl.jpg" alt="an embroidered bowl">
                     <p class="itemSubtext">...and more!</p>
-                </div>
             </div>
         </div>
     </div>
+
 </body>
 </html>
