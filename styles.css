@@ -62,12 +62,13 @@ body {
 }
 
 #slideshowImage {
+    align-self: center;
     border-radius: 500px;
+    width: 100%;
 }
-
 /* Second section */
 
-.secondSection {
+#secondSection {
     background-color: rgba(245, 222, 179, 0.25);
     display: flex;
     flex-direction: column;
@@ -75,15 +76,16 @@ body {
 
 #secondSectionHeader {
     text-align: center;
-    font-size: 4vw;
+    font-size: 5vw;
     font-weight: lighter;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
 }
 
 #itemsContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
     flex-wrap: wrap;
     font-size: 4vw;
 }
@@ -92,7 +94,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5%;
+    margin: 5vw;
+    font-size: 4vw;
+    margin-bottom: -5%;
 }
 
 .circleImage {
@@ -106,6 +110,78 @@ body {
     margin-top: 0;
     text-align: center;
 }
+
+@media only screen and (min-width: 700px) {
+    
+    body {
+        padding: 5%;
+    }
+    
+    #topMenu {
+        font-size: 25px;
+        padding: 10px;
+        justify-content: center;
+        gap: 5vw;
+    }
+
+    #welcomeHeader {
+        font-size: 5vw;
+        margin-bottom: 5px;
+    }
+
+    #subWelcomeHeader {
+        font-size: 2vw;
+    }
+
+    #welcomeText {
+        font-size: 2vw;
+    }
+    
+    #visitStoreButton {
+        font-size: 2vw;
+        width: 20vw;
+    }
+
+    #homepageFirstSectionBox {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: -3vw;
+    }
+
+    #slideshowImage {
+        width: 200%;
+        margin-left: 50px;
+    }
+
+    #itemsContainer {
+        flex-wrap: nowrap;
+    }
+
+    .circleImage {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .itemContainer {
+        margin: 2vw;
+    }
+
+    .itemSubtext {
+        font-size: 2vw;
+    }
+
+    #secondSection {
+        height: 18vw;
+    margin-top: 5vw;
+    }
+
+    #secondSectionHeader {
+        font-size: 3vw;
+    }
+}
+
+
 
 
 /* CONTACT PAGE */
