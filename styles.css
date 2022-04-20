@@ -7,7 +7,6 @@ body {
     font-family: serif;
     display: flex;
     flex-direction: column;
-    padding: 10px;
 }
 
 #topMenu {
@@ -33,14 +32,12 @@ body {
 
 #welcomeHeader {
     font-size: 6vw;
-    font-family: serif;
     font-weight: lighter;
     color: goldenrod;
     text-align: center;
 }
 
 #subWelcomeHeader {
-    margin: 0px;
     font-size: 3vw;
     font-style: italic;
     font-weight: lighter;
@@ -58,7 +55,6 @@ body {
     border-radius: 50px;
     align-self: flex-end;
     width: 30vw;
-    
 }
 
 #slideshowImage {
