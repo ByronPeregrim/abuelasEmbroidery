@@ -202,33 +202,132 @@ body {
 
 /* CONTACT PAGE */
 
+#contactBody {
+    align-items: center;
+}
+
+.contactTopMenu {
+    gap: 12vw;
+}
+
 /*Header*/
-#contactHeader {
+#contactHeader,
+#contactHeaderSubtext{
     text-align: center;
 }
 
-#contactSubHeader {
-    text-align: center;
+input:focus,
+textarea:focus {
+            /* Additional highlight for focused elements */
+    border-color: #000;
 }
 
 #contactForm {
-    /* Center the form on the page */
-    margin: 0 auto;
-    width: 400px;
-    /* Form outline */
-    padding: 1em;
-    border: 1px solid #CCC;
-    border-radius: 1em;
+    background-color: rgba(245, 222, 179, 0.25);
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 80%;
+    padding: 50px;
+    margin: 0 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }   
+
+.form-row input[type='text'],
+.form-row input[type='email'] {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 280px;
+    padding: 7px;
+    font-size: 14px;
+}
+.form-row label {
+    margin-bottom: 2vw;
+  }
+
+.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid {
+    border: 1px solid #D55C5F;
+    color: #D55C5F;
+    box-shadow: none; /* Remove default red glow in Firefox */
+
 }
 
-#contactList {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+#msg {
+    font-size: 14px;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    min-height: 200px;
+    margin-bottom: 10px;
+    resize: none;
+  }
 
 #messageSubmitButton {
-    /* This extra margin represent roughly the same space as the space
-        between the labels and their text fields */
-    margin-left: .5em;
+    font-size: 16px;
+    font-weight: bold;
+  
+    color: #FFFFFF;
+    background-color: goldenrod;
+  
+    border: none;
+    border-radius: 3px;
+  
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+
+#messageSubmitButton:hover {
+    background-color: rgba(218, 165, 32, 0.253);
+}
+  
+#messageSubmitButton:active {
+    background-color: gold;
+}
+
+@media only screen and (min-width: 700px) {
+
+    #contactForm {
+        width: 600px;
+        align-items: center;
+    }
+
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start; /* To avoid stretching */
+        margin-bottom: 20px;
+        margin-right: 140px;
+    }
+
+    .form-row input[type='text'],
+    .form-row input[type='email'],    /* Add */
+    .form-row select,                 /* These */
+    .form-row textarea {              /* Selectors */
+        width: 250px;
+        height: initial;
+    }
+
+    .form-row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+    }
+
+    .form-row textarea {
+          width: 260px;
+    }
+
+
+
 }

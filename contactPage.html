@@ -6,82 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abuela's Embroidery - Contact</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        form li + li {
-            margin-top: 1em;
-        }
-
-        label {
-            /* Uniform size & alignment */
-            display: inline-block;
-            width: 90px;
-            text-align: right;
-        }
-
-        input,
-        textarea {
-            /* To make sure that all text fields have the same font settings
-                By default, textareas have a monospace font */
-            font: 1em sans-serif;
-
-            /* Uniform text field size */
-            width: 300px;
-            box-sizing: border-box;
-
-            /* Match form field borders */
-            border: 1px solid #999;
-        }
-
-        input:focus,
-        textarea:focus {
-            /* Additional highlight for focused elements */
-            border-color: #000;
-        }
-
-        textarea {
-            /* Align multiline text fields with their labels */
-            vertical-align: top;
-            resize: none;
-            /* Provide space to type some text */
-            height: 10em;
-        }
-    </style>
 </head>
-<body>
+<body id="contactBody">
     
-    <div id="topMenu">
+    <div id="topMenu" class="contactTopMenu" >
         <a href="index.html" class="menuLink" id="homeLink">Home</a>
         <a href="storePage.html" class="menuLink" id="storeLink">Store</a>
         <a href="contactPage.html" class="menuLink" id="contactLink">Contact</a>
         <a href="myCartPage.html" class="menuLink" id="myCartLink">My Cart</a>
     </div>
 
-    <div id="firstSection">
-        <div id="homepageHeaders">
+   
+    <header>
         <h1 id="contactHeader">Send Abuela a Message!</h1>
-        <h2 id="subContactHeader">Please enter your name, e-mail address, and your message. I will get back to you as soon as I can!</h2>
-        </div>
-    </div>
+        <p id="contactHeaderSubtext"><em>Please enter your name, e-mail address, and your message and I will respond as soon as I can!</em></p>
+    </header>
 
     <form id="contactForm" action="/sample-page" method="post">
-        <ul id="contactList" >
-            <li>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name" required>
-            </li>
-            <li>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="user_email" required>
-            </li>
-            <li>
-                <label for="msg">Message:</label>
-                <textarea name="user_message" id="msg" cols="30" rows="10" required></textarea>
-            </li>
-            <li>
-                <button id="messageSubmitButton" type="submit">Send your message</button>
-            </li>
-              
-        </ul>
+        <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="user_name" placeholder="Joe" required>
+        </div>
+        <div class="form-row">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="user_email" placeholder="joe@example.com" required>
+        </div>
+        <div class="form-row">
+            <label for="msg">Message</label>
+            <textarea name="user_message" id="msg" cols="30" rows="10" placeholder="Type your message here!" required></textarea>
+        </div>
+        <div>
+            <button id="messageSubmitButton" type="submit">Send your message</button>
+        </div>
     </form>
 
 
