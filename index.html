@@ -35,7 +35,62 @@ The home page introduces customers to the store and provides information on how 
                  click on the "Home" link on the top-left! </p>
             <button type="button" id="visitStoreButton">Visit The Store!</button>
         </div>
-        <img id = "slideshowImage" src="images/whitePurse.jpg" alt="A handmade white purse.">
+
+        
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <!--Slide Images start-->
+                    <div class="slide first">
+                        <img src="images/whitePurse.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/bowl.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/hippieDolls.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/purplePurse.jpg" alt="">
+                    </div>
+                    <!--Slide images end-->
+
+                    <!--Automatic navigation start-->
+                    <div class="naviation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                    <!--Automatic navigation end-->
+                </div>
+                <!--Manual navigation start-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+                <!--Manual navigation ends-->
+            </div>
+
+            <!-- JS Function to automatically scroll through images on homepage-->
+            <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 4){
+                    counter = 1;
+                }
+            }, 5000);
+            </script>
+        
+
     </div>
     
     <div id="itemDisplayBarSection">   <!--Display banner at bottom of page for different categories of goods. Plan on making this banner scrollable and having each 

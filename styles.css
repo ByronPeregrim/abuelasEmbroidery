@@ -29,7 +29,6 @@ body {
 
 #welcomeHeaders {
     background-color: rgba(245, 222, 179, 0.25);
-    z-index: 1;
 }
 
 #welcomeHeader {
@@ -52,14 +51,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 1;
+    width: 50vw;
  }
 
 #welcomeMessage {
     font-size: 3vw;
     text-align: center;
     margin-top: 4vw;
-    z-index: 1;
+}
+
+#welcomeMessageAndPhoto{
+    display: flex;
 }
 
 #visitStoreButton {
@@ -67,17 +69,123 @@ body {
     background-color: orange;
     border-radius: 50px;
     width: 30vw;
-    z-index: 1;
 }
 
-#slideshowImage {
-    align-self: center;
-    border-radius: 500px;
-    width: 100%;
-    z-index: 0;
-    margin-top: -10vw;
-    margin-left: 3vw;
+/* Slideshow css start */
+
+.slider{
+    width: 39.75vw;
+    height: 39vw;
+    overflow: hidden;
+    display: flex;
 }
+
+.slides{
+    width: 500%;
+    height: 39vw;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 39vw;
+    height: 39vw;
+    border-radius: 300px;
+    transition: 2s;
+}
+
+/* CSS for manual slide navigation */
+
+.navigation-manual{
+    position: absolute;
+    width: 39.75vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vw;
+    align-self: flex-end;
+}
+
+.manual-btn{
+    border: 2px solid orange;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 1.5vw;
+}
+
+.manual-btn:hover{
+    background: orange;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+/* CSS for automatic slide navigation */
+
+.navigation-auto{
+    position: absolute;
+    width: 39.75vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vw;
+    align-self: flex-end;
+
+}
+
+.navigation-auto div{
+    border: 2px solid orange;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+
+
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 1.5vw;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: orange;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: orange;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: orange;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: orange;
+}
+
 /* Item display bar section */
 
 #itemDisplayBarSection {
@@ -149,7 +257,6 @@ body {
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-top: -3vw;
     }
 
     #welcomeMessage {
@@ -163,15 +270,10 @@ body {
         width: 20vw;
     }
 
-    #slideshowImage {
-        width: 200%;
-        margin-left: 50px;
-        margin-top: -2vw;
-    }
 
     #itemDisplayBarSection {
         height: 18vw;
-    margin-top: 5vw;
+
     }
 
     #itemDisplayBarSectionHeader {
