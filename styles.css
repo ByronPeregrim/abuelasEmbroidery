@@ -74,7 +74,7 @@ body {
 /* Slideshow css start */
 
 .slider{
-    width: 30vw;
+    width: 40vw;
     height: 30vw;
     overflow: hidden;
     display: flex;
@@ -92,6 +92,9 @@ body {
 
 .slide{
     transition: 2s;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
 }
 
 .slide img{
@@ -105,7 +108,7 @@ body {
 
 .navigation-manual{
     position: absolute;
-    width: 30vw;
+    width: 40vw;
     display: flex;
     justify-content: center;
     margin-bottom: 3vw;
