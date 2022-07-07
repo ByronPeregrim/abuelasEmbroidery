@@ -74,15 +74,15 @@ body {
 /* Slideshow css start */
 
 .slider{
-    width: 39.75vw;
-    height: 39vw;
+    width: 30vw;
+    height: 30vw;
     overflow: hidden;
     display: flex;
 }
 
 .slides{
     width: 500%;
-    height: 39vw;
+    height: 30vw;
     display: flex;
 }
 
@@ -91,13 +91,12 @@ body {
 }
 
 .slide{
-    width: 25%;
     transition: 2s;
 }
 
 .slide img{
-    width: 39vw;
-    height: 39vw;
+    width: 30vw;
+    height: 30vw;
     border-radius: 300px;
     transition: 2s;
 }
@@ -106,7 +105,7 @@ body {
 
 .navigation-manual{
     position: absolute;
-    width: 39.75vw;
+    width: 30vw;
     display: flex;
     justify-content: center;
     margin-bottom: 3vw;
