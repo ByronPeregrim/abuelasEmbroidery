@@ -3,7 +3,7 @@
 /* Top banner with links */
 
 body {
-    background-color: white;
+    background-color: whitesmoke;
     font-family: serif;
     display: flex;
     flex-direction: column;
@@ -62,6 +62,7 @@ body {
 
 #welcomeMessageAndPhoto{
     display: flex;
+    height: 32vw;
 }
 
 #visitStoreButton {
@@ -75,7 +76,7 @@ body {
 
 .slider{
     width: 40vw;
-    height: 30vw;
+    height: 31vw;
     overflow: hidden;
     display: flex;
 }
@@ -102,6 +103,7 @@ body {
     height: 30vw;
     border-radius: 300px;
     transition: 2s;
+    border: .25px solid black;
 }
 
 /* CSS for manual slide navigation */
