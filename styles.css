@@ -34,7 +34,7 @@ body {
 #welcomeHeader {
     font-size: 6vw;
     font-weight: lighter;
-    color: goldenrod;
+    color: rgba(218, 165, 32, 0.75);
     text-align: center;
     margin-top: 1vw;
 }
@@ -103,7 +103,7 @@ body {
     height: 30vw;
     border-radius: 300px;
     transition: 2s;
-    border: .25px solid black;
+    border: .25px solid rgba(0, 0, 0, 0.4);
 }
 
 /* CSS for manual slide navigation */
